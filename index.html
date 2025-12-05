@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM </title>
+</head>
+<body id="demo">
+   <h1 id="title">Welcome to DOM Manipulation</h1>
+   <p id="message">Click the button to change this text.</p>
+   <button id="changeBtn">Change Text</button>
+<script>
+    const title = document.getElementById("title");
+    const message = document.getElementById("message");
+    const button = document.getElementById("changeBtn");
+     button.addEventListener("click" , ()=>{
+        message.textContent="This Pragraph have been changed using HTML DOM"
+        title.style.color="red"
+        title.style.fontFamily="cursive"
+        demo.style.backgroundColor="yellow"
+     })
+</script>
+</body>
+</html>
